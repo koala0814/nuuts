@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="mn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Newstapa Demo — Budragchaa Serdamba</title>
+  <style>
+    body{font-family:Inter,system-ui,Segoe UI,Roboto,Arial; margin:0; color:#111;}
+    header{background:#0b3d91;color:#fff;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;}
+    nav a{color:#fff;text-decoration:none;margin:0 12px;font-weight:600;}
+    .container{max-width:1000px;margin:28px auto;padding:0 16px;}
+    .hero{display:flex;gap:20px;align-items:flex-start;}
+    .left{flex:2}
+    .right{flex:1;background:#f7f7f9;padding:16px;border-radius:8px}
+    h1{margin:0 0 8px 0;font-size:22px}
+    .menu{display:flex;align-items:center}
+    footer{padding:18px;text-align:center;color:#666;font-size:14px;margin-top:40px}
+    .video-placeholder{background:#000;color:#fff;height:200px;display:flex;align-items:center;justify-content:center;border-radius:6px}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:12px}
+    @media(max-width:700px){.hero{flex-direction:column}.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header>
+    <div style="display:flex;align-items:center;gap:12px">
+      <strong>Newstapa Demo</strong>
+    </div>
+    <nav class="menu">
+      <a href="#home">ЭХЛЭЛ</a>
+      <a href="#content">КОНТЕНТ</a>
+      <a href="#about">БИДНИЙ ТУХАЙ</a>
+      <a href="#donate">ХАНДИВ</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="home" class="hero">
+      <div class="left">
+        <h1>Эхлэл — Budragchaa Serdamba</h1>
+        <p><strong>Channel:</strong> Budragchaa Serdamba — a public YouTube channel used here as the content source.</p>
+        <p>Below are sample video embeds and short summaries. Replace the <code>VIDEO_ID</code> placeholders with actual IDs from the channel to show real videos.</p>
+
+        <div class="grid">
+          <div>
+            <!-- Replace VIDEO_ID with a real YouTube video id -->
+            <iframe width="100%" height="200" src="https://www.youtube.com/embed/VIDEO_ID" title="Video 1" frameborder="0" allowfullscreen></iframe>
+            <p><strong>Видео 1</strong> — short summary or note about the video.</p>
+          </div>
+          <div>
+            <iframe width="100%" height="200" src="https://www.youtube.com/embed/VIDEO_ID2" title="Video 2" frameborder="0" allowfullscreen></iframe>
+            <p><strong>Видео 2</strong> — short summary or note about the video.</p>
+          </div>
+        </div>
+      </div>
+
+      <aside class="right">
+        <h3>Богино танилцуулга</h3>
+        <p><strong>Budragchaa Serdamba</strong> is the channel referenced for this demo; use the channel page to find video IDs and descriptions.</p>
+        <p><a href="https://youtube.com/@budragchaaser?si=dKc5DalzlaOawiWH" target="_blank" rel="noopener">Open channel on YouTube</a></p>
+      </aside>
+    </section>
+
+    <section id="about">
+      <h2>Бидний тухай</h2>
+      <p>Энд та Newstapa загварын сайтны бүтэц, редакцийн зарчим, болон контентын эх сурвалжийн товч мэдээллийг байрлуулна. Видео контентыг зөвшөөрөлтэй ашиглахыг анхаарна уу.</p>
+    </section>
+
+    <section id="donate">
+      <h2>Хандив</h2>
+      <p>Хандивын товч мэдээлэл болон холбоосыг энд байрлуулна. (Жишээ: PayPal, банкны данс, эсвэл Patreon холбоос.)</p>
+    </section>
+  </main>
+
+  <footer>
+    © Demo site — replace placeholders with real content and video IDs from the channel.
+  </footer>
+</body>
+</html>
